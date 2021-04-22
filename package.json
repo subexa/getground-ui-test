@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "test": "cypress run --spec cypress/integration/nhs_cost_calculator_spec.js"
   },
   "author": "",
   "license": "ISC",
