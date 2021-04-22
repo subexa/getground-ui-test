@@ -1,0 +1,4 @@
+{
+    "chromeWebSecurity": false,
+    "baseUrl": "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs"
+}

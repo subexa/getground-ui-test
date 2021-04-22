@@ -1,0 +1,27 @@
+describe('The NHS cost calulator Start screen', () => {
+    it('Gets to You get help with NHS costs screen', () => {
+        cy.visit('/start')
+        cy.get('#next-button').click()
+        cy.get('#label-wales').click()
+        cy.get('#next-button').click()
+        cy.get('#dob-day').type('22').should('have.value', '22')
+        cy.get('#dob-month').type('11').should('have.value', '11')
+        cy.get('#dob-year').type('1993').should('have.value', '1993')
+        cy.get('#next-button').click()
+        cy.get('#label-yes').click()
+        cy.get('#next-button').click()
+        cy.get('#label-yes').click()
+        cy.get('#next-button').click()
+        cy.get('[for="yes-universal"]').click()
+        cy.get('#next-button').click()
+        cy.get('#label-yes').click()
+        cy.get('#next-button').click()
+        cy.get('#label-yes').click()
+        cy.get('#next-button').click()
+        cy.contains("Done")
+        cy.contains("You get help with NHS costs")
+    })
+    it('test 2', () => {
+        
+    })
+})
