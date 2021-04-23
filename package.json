@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec cypress/integration/nhs_cost_calculator_spec.js"
+    "test:chrome": "cypress run --spec cypress/integration/nhs_cost_calculator_spec.js --browser chrome",
+    "test:firefox": "cypress run --spec cypress/integration/nhs_cost_calculator_spec.js --browser firefox"
   },
   "author": "",
   "license": "ISC",
