@@ -45,6 +45,8 @@ describe('The NHS cost calulator Start screen', () => {
         cy.get('#next-button').click()
         cy.get('[for="radio-yes"]').click()
         cy.get('#next-button').click()
+        cy.contains("You get free:")
+        cy.contains("NHS prescriptions")
     })
 
     it('Shows error for invalid date of birth', () => {
